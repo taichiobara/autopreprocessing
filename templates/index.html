@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+    <script src="{{url_for('static', filename='index.js')}}"></script>
+  </head>
+  <body>
+    
+    
+    <form action="/preprocessing">
+      <div>キーワード:</div>
+      <input type="text" name="query" value="入力してください"><br>
+      <div>何枚集めますか？:</div>
+      <input type="number" name="num" value="2"><br>
+
+      <h3>サイズを揃える </h3>
+      <div>揃えますか</div>
+
+      <select name="size">
+        <option value="1">はい</option>
+        <option value="0" selected="selected">いいえ</option>
+      </select>
+
+      <div>縦のサイズ:</div>
+        <input type="number" name="tate1" value="300">
+      <div>横のサイズ:</div>
+        <input type="number" name="yoko1" value="300"><br>
+
+      <h3>データの水増しする</h3>
+      <div>水増ししますか？</div>
+      <select name="mizumashiselct">
+        <option value="1">はい</option>
+        <option value="0" selected="selected">いいえ</option>
+      </select>
+
+      <div>何倍にしますか？:</div>
+        <input type="number" name="kakeru" value="2"><br>
+
+        <div>回転角度:</div>
+        <input type="number" name="rr" value="20">
+        <div>水平にシフトする画像横幅に対する割合:</div>
+        <input type="number" name="wsr" value="0">
+        <div>シアー強度:</div>
+        <input type="number" name="sr" value="0">
+        <div>水平にシフトする画像縦に対する割合:</div>
+        <input type="number" name="hsr" value="0">
+        <div>拡大縮小範囲:</div>
+        <input type="number" name="zr" value="0">
+        <div>ランダムにチャンネルをシフトする範囲:</div>
+        <input type="number" name="csr" value="40">
+
+      
+      <br>
+      <br><br><br>
+      <button type="submit" formmethod="POST">実行</button>
+    </form>
+
+  </body>
+</html>

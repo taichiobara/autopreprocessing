@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>HOGEHOGE</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='hukuda3.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='all.css')}}">
+    <script src="{{url_for('static', filename='min.js')}}"></script>
+    
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+
+    <script>
+      $(function(){
+      $('#option-opener').click(function(){
+        $('.option-container').slideDown();
+      });
+      $('#back').click(function(){
+        $('.option-container').slideUp();
+      });
+    });
+      </script>
+    
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <form action="/preprocessing">
+        <h1>HOGEHOGE</h1>
+        <div class="input">
+
+          <input class="keyword" placeholder="キーワード" name="query" >
+          <input class="quantity" type="number" placeholder="枚" name="num">
+          <button  type="submit" formmethod="POST" class="fas fa-arrow-down fa-3x my-white" id="download"></button>
+        </div>
+
+        <u id="option-opener">option</u>
+
+        <div class="option-container">
+        <div class="option">
+          <div class="back-icon">
+            <i class="fas fa-sort-up fa-2x my-white2" id="back"></i>
+          </div>
+          
+            <div class="size opt">
+              <p class="title">サイズ</p>
+              <select name="size">
+                <option value="1" >揃える</option>
+                <option value="0" selected="selected">揃えない</option>
+              </select>
+              <div class="tate nyuryoku above">
+                <p>縦:</p>
+                <input type="number" class="in" value="300" name="tate1">
+              </div>
+              <div class="yoko nyuryoku">
+                <p>横:</p>
+                <input type="number" class="in" value="300" name="yoko1">
+              </div>
+            </div>
+            
+            <div class="mizumashi-1 opt">
+              <p class="title">水増し</p>
+              <select name="mizumashiselct">
+                <option value="1">する</option>
+                <option value="0" selected="selected">しない</option>
+              </select>
+              <div class="bairitu nyuryoku above">
+                <p>倍数:</p>
+                <input type="number" class="in" value="2" name="kakeru">
+              </div>
+              <div class="kaiten nyuryoku">
+                <p>回転角度:</p>
+                <input type="number" class="in" value="20" name="rr">
+              </div>
+              <div class="shia nyuryoku">
+                <p>シアー強度:</p>
+                <input type="text" class="in" value="0" name="sr">
+              </div>
+            </div>
+            
+            <div class="mizumashi-2 opt">
+              <div class="shift-tate nyuryoku shift">
+                <p>シフト割合(縦):</p>
+                <input type="text" class="in" value="0" name="hsr">
+              </div>
+              <div class="shift-yoko nyuryoku shift">
+                <p>シフト割合(横):</p>
+                <input type="text" class="in" value="0" name="wsr">
+              </div>
+              <div class="henbai nyuryoku">
+                <p>変倍範囲:</p>
+                <input type="text" class="in" value="0" name="zr">
+              </div>
+              <div class="random nyuryoku">
+                <p>ランダムシフト:</p>
+                <input type="text" class="in" value="40" name="csr">
+              </div>
+
+              <a href="" class="how-to-use"><u>How to use</u></a>
+            </div>
+            
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,201 @@
+body{
+  font-family: "Hiragino Kaku Gothic ProN";
+  margin:0;
+  background:rgb(211, 205, 205);
+  
+  background-image:url("/static/images/ashi.jpg");
+  background-size:cover;
+  padding-top:140px;
+}
+
+.main h1{
+  color: rgba(255,255,255,0.7);
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.container{
+  text-align:center;
+}
+
+.input input{
+  margin-top:10px;
+  padding:10px;
+  margin-bottom:30px;
+  font-size:23px;
+  border: 1px solid #dee7ec;
+}
+
+.keyword{
+  width:380px;
+}
+
+.quantity{
+  width:45px;
+}
+
+
+
+
+#option-opener{
+  color: rgba(248, 241, 241, 0.979);
+  position: relative;
+  bottom:31px;
+  letter-spacing:1px;
+  left:110px;
+  cursor:pointer;
+}
+
+#option-opener:hover{
+  color: rgba(255,255,255,1);
+}
+
+#download{
+  cursor:pointer;
+  position: relative;
+  top:10px;
+  background-color: orange;
+  padding:0px 0px;
+  opacity:0.8;
+}
+
+.my-white{
+  color:white;
+}
+
+#download:hover{
+opacity:1;
+}
+
+.option{
+  border-radius:4px;
+  margin:0 auto;
+  width:25%;
+  height:180px;
+  display:flex;
+  background: rgba(180, 180, 180,0.8)
+}
+
+.option-container{
+  position: relative;
+  bottom:25px;
+  height:270px;
+  display:none;
+}
+
+.opt{
+  padding:0;
+  width:30%;
+}
+
+.option .title{
+margin:10px 0 3px 0; 
+font-weight:normal;
+}
+
+.nyuryoku{
+  display:flex;
+  margin-bottom:10px;
+}
+
+.above{
+  margin:10px 0 10px 0;
+}
+
+.option p{
+  margin:0 5px 0 3px;
+  padding:0;
+}
+
+.in{
+  
+ width: 30px;
+ height:15px;
+ font-size:10px;
+}
+
+#back{
+  position: relative;
+  left:335px;
+  top:3px;
+  cursor:pointer;
+  opacity:0.8
+}
+
+#back:hover{
+  opacity:1;
+  color: #fcfcfc;
+}
+
+.my-white2{
+  color: #f3f3f3;
+}
+
+.kaiten{
+  position: relative;
+  right:24px;
+}
+
+.kaiten p{
+  position: relative;
+  white-space: nowrap;
+}
+
+.shia{
+  position: relative;
+  right:35px;
+}
+
+.shia p{
+  position: relative;
+  white-space: nowrap;
+}
+
+.shift-tate{
+  margin-top:40px;
+}
+
+.shift{
+  position: relative;
+  right:15px;
+}
+
+.shift p{
+  position: relative;
+  white-space: nowrap;
+}
+
+.nyuryoku p{
+  font-size:12px;
+}
+
+.random{
+  position: relative;
+  right:6px;
+}
+
+.random p{
+  position: relative;
+  white-space: nowrap;
+}
+
+.henbai{
+  position: relative;
+  left:17px;
+}
+
+.how-to-use{
+  position: relative;
+  letter-spacing:1px;
+  cursor:pointer;
+  font-size:12px;
+  left:28px;
+  bottom:7px;
+  color:#111;
+  opacity:1;
+}
+
+.how-to-use:hover{
+opacity:0.6;
+}
