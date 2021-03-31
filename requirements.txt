@@ -9,7 +9,7 @@ icrawler==0.6.2
 idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10.3
-lxml==4.4.2
+lxml==4.6.3
 MarkupSafe==1.1.1
 Pillow==6.2.1
 python-dateutil==1.5
